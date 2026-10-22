@@ -2,7 +2,9 @@
   "required": true,
   "package": "polygonalbones.polyfactory.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": [],
+  "mixins": [
+    "recipe.RecipeMapMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

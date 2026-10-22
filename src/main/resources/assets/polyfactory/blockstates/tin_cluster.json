@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "polyfactory:block/tin_cluster"
+    }
+  }
+}
