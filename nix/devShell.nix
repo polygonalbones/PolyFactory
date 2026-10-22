@@ -1,9 +1,29 @@
 {
+  lib,
   mkShell,
   jetbrains,
+  libGL,
+  glfw3-minecraft,
+  flite,
+  libpulseaudio,
 }:
-mkShell {
+let
+  java = jetbrains.jdk-no-jcef;
+
   packages = [
-    jetbrains.jdk-no-jcef
+    libGL
+    glfw3-minecraft
+    flite
+    libpulseaudio
   ];
+in
+mkShell {
+  inherit packages;
+
+  nativeBuildInputs = [
+    java
+  ];
+
+  LD_LIBRARY_PATH = lib.makeLibraryPath packages;
+  JAVA_HOME = "${java.home}";
 }
