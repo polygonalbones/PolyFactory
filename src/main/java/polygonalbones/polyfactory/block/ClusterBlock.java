@@ -22,7 +22,7 @@ public class ClusterBlock extends Block {
         super(properties
                 .mapColor(MapColor.STONE)
                 .instrument(NoteBlockInstrument.BASEDRUM)
-                .strength(0.5F, 3.0F)
+                .strength(1.0F, 1.0F)
                 .noOcclusion());
     }
 

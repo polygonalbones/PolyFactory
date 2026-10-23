@@ -1,5 +1,12 @@
 {
   "block.polyfactory.tin_cluster": "Tin Cluster",
+  "block.polyfactory.raw_tin_block": "Block of Raw Tin",
   "item.polyfactory.raw_tin": "Raw Tin",
-  "item.polyfactory.tin_ingot": "Tin Ingot"
+  "item.polyfactory.tin_ingot": "Tin Ingot",
+  "item.polyfactory.tin_axe": "Tin Axe",
+  "item.polyfactory.tin_hoe": "Tin Hoe",
+  "item.polyfactory.tin_pickaxe": "Tin Pickaxe",
+  "item.polyfactory.tin_shovel": "Tin Shovel",
+  "item.polyfactory.tin_spear": "Tin Spear",
+  "item.polyfactory.tin_sword": "Tin Sword"
 }

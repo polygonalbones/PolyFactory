@@ -9,6 +9,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
 import polygonalbones.polyfactory.init.ModBlocks;
 import polygonalbones.polyfactory.init.ModItems;
+import polygonalbones.polyfactory.init.ModTags;
+import polygonalbones.polyfactory.init.ModToolMaterials;
 
 @Mod(PolyFactory.MODID)
 public class PolyFactory {
@@ -17,7 +19,9 @@ public class PolyFactory {
 
     public PolyFactory(IEventBus modBus, ModContainer modContainer) {
         LOGGER.info("PolyFactory init");
+        ModTags.init();
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
+        ModToolMaterials.init();
     }
 }
